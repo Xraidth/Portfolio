@@ -5,19 +5,19 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 export const CustomCard = ({title, body, img}) => {
 
   
-    
+    console.log(img)
 
   return (
-    <td>
-      <div className="card" style={{ width: '18rem'}}>
-      <img src="../../public/Imagenes/Cards/student1.jpg" className="card-img-top" alt="..."></img>
+    
+      <div className="card custom-card" >
+      <img src={img} className="card-img-top" alt="..."></img>
       <div className="card-body">  
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{body}</p>
           
         </div>
       </div>
-      </td>
+    
   );
 };
 //<a href="" className="btn btn-primary">Mas información</a>
