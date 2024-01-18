@@ -56,7 +56,9 @@ custom-tr{
 .custom-card-p{
   font-size: 15px;
 }
-
+.icono {
+  width: 30px;
+}
 
 }
 /*---------------SCROLLL----------------*/
