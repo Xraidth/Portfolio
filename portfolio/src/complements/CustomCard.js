@@ -5,7 +5,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 export const CustomCard = ({title, body, img}) => {
 
   
-    console.log(img)
+  
+    
 
   return (
     
@@ -13,7 +14,7 @@ export const CustomCard = ({title, body, img}) => {
       <img src={img} className="card-img-top" alt="..."></img>
       <div className="card-body">  
           <h5 className="card-title">{title}</h5>
-          <p className="card-text">{body}</p>
+          <p className="card-text custom-card-p">{body}</p>
           
         </div>
       </div>

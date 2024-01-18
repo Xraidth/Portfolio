@@ -10,61 +10,16 @@ export const CustomRows = () => {
   
   const cardsData = [
     {
-      title: "Aprendizaje online",
+      title: "Website UTNFRRO",
       body: "Sumérgete en el fascinante mundo del aprendizaje online.",
-      img: '../../public/student1.jpg'
-    },
-    {
-      title: "Exploración Espacial",
-      body: "Descubre los misterios del espacio y las estrellas.",
-      img: ''
-    },
-    {
-      title: "Cocina Creativa",
-      body: "Aprende a preparar deliciosos platillos con ingredientes innovadores.",
-      img: ''
-    },
-    {
-      title: "Aventuras Literarias",
-      body: "Viaja a mundos imaginarios a través de la lectura de libros fascinantes.",
-      img: ''
-    },
-    {
-      title: "Viaje en Bicicleta",
-      body: "Explora nuevos lugares y mantente activo con emocionantes rutas en bicicleta.",
-      img: ''
-    },
-    {
-      title: "Fotografía Creativa",
-      body: "Captura momentos especiales y desarrolla tus habilidades en fotografía.",
-      img: ''
-    },
-    {
-      title: "Yoga y Meditación",
-      body: "Encuentra paz interior y mejora tu bienestar con prácticas de yoga y meditación.",
-      img: ''
-    },
-    {
-      title: "Arte Abstracto",
-      body: "Expresa tu creatividad a través de formas y colores en el arte abstracto.",
-      img: ''
-    },
-    {
-      title: "Aprendizaje de Idiomas",
-      body: "Domina nuevos idiomas y amplía tus horizontes culturales.",
-      img: ''
-    },
-    {
-      title: "Ecoturismo",
-      body: "Descubre la belleza de la naturaleza y contribuye a la conservación del medio ambiente.",
-      img: ''
+      img: './student1.png'
     }
   ];
   
 
   const cards = cardsData.map((c, index)=> (
   <td key={index}>
-  <CustomCard title= {c.title} body= {c.body} img = {'../../public/student1.jpg'} />
+  <CustomCard title= {c.title} body= {c.body} img = {c.img} />
   </td>
   ));
   const rows = sortCells(cards, 3);
