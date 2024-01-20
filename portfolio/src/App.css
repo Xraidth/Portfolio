@@ -19,19 +19,19 @@
 }
 
 .App-header{
-  height: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
+  display: block;
+  border-bottom: solid  #1587EF 1px;
+  
 }
 
-.header__h1{
-color: white;
+.custom_div_navbar{
+  border: solid red 1px;
+  
 }
 
 .App-body {
-  background-color: #000000;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -45,15 +45,21 @@ color: white;
   color: #61dafb;
 }
 
+.App-body-title-div{
+  margin-top: 50px;
+  width: 149vh;
+  display:flex;
+}
+
 .App-SubBG{
-height: 60vh;
+height: 44vh;
 width: 149vh;
-background: rgba(255, 255, 255, 0.5);
+margin-top: 10px ;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.1);
+border: 1px solid #1587EF;
 overflow: auto;
 
 }
@@ -68,12 +74,11 @@ overflow: auto;
 .App-Contactos{
   height: 10vh;
   width: 150vh;
-  background: rgba(255, 255, 255, 0.5);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #1587EF;
   overflow: auto;
   margin-top: 50px;
   }

@@ -5,6 +5,7 @@ import { CardsTable } from './complements/CardsTable';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import CustomNav from './complements/CustomNav';
 
 
 
@@ -15,15 +16,25 @@ function App() {
     <div className="App">
 
       <header className='App-header'>
-        <h1 className='header__h1'>Mis Proyectos</h1>
+        <CustomNav></CustomNav>
       </header>
 
-      <body className="App-body">
+      <div className="App-body">
+        <div className='App-body-title-div'>
+            <span className=''>
+            <h5>My Proyects</h5>
+            </span>
+        </div>
         <div className="App-SubBG scroll-both">
         <CardsTable></CardsTable>
         </div>
-        <div className='App-Contactos'></div>
-      </body>
+
+        <div className='App-footer'>
+        <div className='App-Contactos'>
+
+        </div>
+        </div>
+      </div>
     </div>
   );
 }
