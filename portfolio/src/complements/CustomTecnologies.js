@@ -8,7 +8,7 @@ const CustomTecnologies = ({tecnologies}) => {
 
   if(tecnologies){
     img_tecnologies = tecnologies.map((e)=>(
-    <span class="">
+    <span class="m-1">
     <img src={e} className="img-fluid icono" alt="..."></img>
     </span>
 

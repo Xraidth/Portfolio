@@ -8,19 +8,20 @@ export const CustomCard = ({title, body, img, tecnologies, direction_card}) => {
   return (
     
       <div className="card custom-card" >
+      <div className='custom-max-height'>
       <img src={img} className="card-img-top" alt="..."></img>
+      </div>
       <div className="card-body">  
           <h5 className="card-title">{title}</h5>
           <p className="card-text custom-card-p">{body}</p>
-          <a href={direction_card} className="btn btn-primary">Mas información</a>
-          <div>
+          <div className='mt-3'>
           <CustomTecnologies tecnologies={tecnologies}></CustomTecnologies>
           </div>
-
+          
         </div>
       </div>
     
   );
 };
 
-//
+//<a href={direction_card}>Mas información</a>

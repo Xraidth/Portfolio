@@ -1,11 +1,16 @@
+
 .App {
   text-align: center;
+  background-color: #000000;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  
 }
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,13 +18,24 @@
   }
 }
 
-.App-header {
-  background-color: #aaaaaa;
+.App-header{
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__h1{
+color: white;
+}
+
+.App-body {
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   z-index: 0;
@@ -30,8 +46,8 @@
 }
 
 .App-SubBG{
-height: 85vh;
-width: 150vh;
+height: 60vh;
+width: 149vh;
 background: rgba(255, 255, 255, 0.5);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -40,13 +56,29 @@ backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.1);
 overflow: auto;
 
+}
+
 .custom-card{
   width: 17.4rem;
   margin: 10px;
-  background-color: rgba(0, 0, 0, 0.1) !important;
   transition: transform .05ms;
   z-index: 200;
 }
+
+.App-Contactos{
+  height: 10vh;
+  width: 150vh;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: auto;
+  margin-top: 50px;
+  }
+
+
 .custom-card:hover{
 transform: scale(1.03);
 }
@@ -60,7 +92,13 @@ custom-tr{
   width: 30px;
 }
 
+.custom-max-height{
+  display: flex;
+  height: 100px; 
+  overflow: hidden;
 }
+
+
 /*---------------SCROLLL----------------*/
 /* width */
 ::-webkit-scrollbar {

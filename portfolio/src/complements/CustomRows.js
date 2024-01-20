@@ -19,7 +19,20 @@ export const CustomRows = () => {
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
       ],
       direction_card: 'http://utnfrroproyecto2024v1.wuaze.com/?i=1'
+    },
+    {
+      title: "TPI-Academia",
+      body: "El Sistema de Gestión Académica",
+      img: './academia1.png',
+      tecnologies:[
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg'
+      ],
+      direction_card: 'https://github.com/fabriortenzi/TPI-Academia'
     }
+    
+
+
    
   ];
   
