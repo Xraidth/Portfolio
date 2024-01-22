@@ -6,6 +6,7 @@ import { CardsTable } from './complements/CardsTable';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import CustomNav from './complements/CustomNav';
+import CustomContacts from './complements/CustomContacts';
 
 
 
@@ -30,9 +31,9 @@ function App() {
         </div>
 
         <div className='App-footer'>
-        <div className='App-Contactos'>
-
-        </div>
+          <div className='App-Contactos'>
+            <CustomContacts></CustomContacts>
+          </div>
         </div>
       </div>
     </div>
