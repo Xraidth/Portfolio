@@ -26,14 +26,24 @@ export const CustomRows = () => {
       img: './academia1.png',
       tecnologies:[
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg'
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg',
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg',
+        'https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg'
       ],
       direction_card: 'https://github.com/fabriortenzi/TPI-Academia'
+    },
+    {
+      title: "WebService",
+      body: "El Sistema de Gestión Académica",
+      img: './nodejs.png',
+      tecnologies:[
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg'
+        
+        
+      ],
+      direction_card: 'https://github.com/Xraidth/WebServer.git'
     }
-    
-
-
-   
   ];
   
 
