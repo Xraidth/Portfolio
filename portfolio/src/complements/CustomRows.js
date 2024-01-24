@@ -11,18 +11,18 @@ export const CustomRows = () => {
   const cardsData = [
     {
       title: "UTNFRRO Website",
-      body: "Mi primer sito web",
+      body: "My first website",
       img: './student1.png',
       tecnologies:[
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
       ],
-      direction_card: 'http://utnfrroproyecto2024v1.wuaze.com/?i=1'
+      direction_card: 'https://utnfrroproyecto2024.000webhostapp.com/'
     },
     {
       title: "TPI-Academia",
-      body: "El Sistema de Gestión Académica",
+      body: "The Academic Management System",
       img: './academia1.png',
       tecnologies:[
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
@@ -34,11 +34,11 @@ export const CustomRows = () => {
     },
     {
       title: "WebService",
-      body: "El Sistema de Gestión Académica",
+      body: "User Management Web API Server",
       img: './nodejs.png',
       tecnologies:[
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg'
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg'
         
         
       ],

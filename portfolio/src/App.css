@@ -64,10 +64,14 @@ overflow: auto;
 
 }
 
+.custom-card-link{
+  text-decoration: none;
+  color:inherit;
+}
+
 .custom-card{
   width: 17.4rem;
   margin: 10px;
-  transition: transform .05ms;
   z-index: 200;
 }
 
@@ -87,9 +91,7 @@ overflow: auto;
   }
 
 
-.custom-card:hover{
-transform: scale(1.03);
-}
+
 custom-tr{
   text-align: center;
 }
