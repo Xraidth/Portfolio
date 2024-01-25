@@ -22,7 +22,7 @@ function App() {
 
       <div className="App-body">
         <div className='App-body-title-div'>
-            <span className=''>
+            <span className='App-body-title-span'>
             <h5>My Proyects</h5>
             </span>
         </div>
