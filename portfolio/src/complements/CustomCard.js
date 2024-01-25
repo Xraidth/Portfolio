@@ -6,10 +6,10 @@ import CustomTecnologies from './CustomTecnologies';
 export const CustomCard = ({title, body, img, tecnologies, direction_card}) => {
 
   return (
-    <a href={direction_card} className="custom-card-link">
+    <a href={direction_card} className="custom-card-link" title ={title}>
       <div className="card custom-card" >
       <div className='custom-max-height'>
-      <img src={img} className="card-img-top" alt="..."></img>
+      <img src={img} className="card-img-top " alt={title} ></img>
       </div>
       <div className="card-body">  
           <h5 className="card-title">{title}</h5>
