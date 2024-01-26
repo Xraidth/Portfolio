@@ -1,6 +1,20 @@
-import React from 'react'
+import {React, useState} from 'react'
 
-const CustomNav = () => {
+const CustomNav = ({handleInputChang}) => {
+
+  const [valorInput, setValorInput] = useState('');
+
+  const handleInputChange = (event) => {
+    setValorInput(event.target.value);
+  };
+
+  function handleClick(e){
+    e.preventDefault();
+    handleInputChang(valorInput);
+  } 
+
+
+
   return (
     
       <nav className="navbar navbar-expand-lg bg-body-dark">
@@ -33,7 +47,7 @@ const CustomNav = () => {
             </li>
           </ul>
           <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" id='inSearch' />
+            <input className="form-control me-2"  onChange={handleInputChange} type="search" placeholder="Search" aria-label="Search" id='inSearch' />
             <button onClick={handleClick} className="btn btn-outline-primary" type="submit">Search</button>
           </form>
         </div>
@@ -42,13 +56,4 @@ const CustomNav = () => {
     
   )
 }
-
-function handleClick ()
-{
-  alert("hola mundo");
-}
-
-
-
-
 export default CustomNav

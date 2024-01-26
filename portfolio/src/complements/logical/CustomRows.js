@@ -1,12 +1,14 @@
-import React from 'react'
-import { CustomCard } from './CustomCard'
+import {React,
+  // useState
+  } from 'react'
+import { CustomCard } from '../visual/CustomCard'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 
 
 
-export const CustomRows = () => {
+export const CustomRows = ({card_filter}) => {
   
   const cardsData = [
     {
@@ -39,20 +41,13 @@ export const CustomRows = () => {
       tecnologies:[
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg'
-        
-        
       ],
       direction_card: 'https://github.com/Xraidth/WebServer.git'
     }
   ];
   
-
-  const cards = cardsData.map((c, index)=> (
-  <td key={index}>
-  <CustomCard title= {c.title} body= {c.body} img = {c.img} tecnologies ={ c.tecnologies} direction_card={c.direction_card} />
-  </td>
-  ));
-  const rows = sortCells(cards, 3);
+  const filteredDatos = cardsData.filter((e)=> e.title.toLowerCase().includes(card_filter.toLocaleLowerCase()));
+  const rows = sortCells(createcards(filteredDatos), 3);
 
   return (
     <tbody>
@@ -61,6 +56,15 @@ export const CustomRows = () => {
   );
 };
 
+function createcards(cardsData){
+  const cards = cardsData.map((c, index)=> (
+    <td key={index}>
+    <CustomCard title= {c.title} body= {c.body} img = {c.img} tecnologies ={ c.tecnologies} direction_card={c.direction_card} />
+    </td>
+    ));
+  return cards
+
+}
 
 
 function sortCells(arr, chunkSize) {

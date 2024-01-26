@@ -10,7 +10,6 @@ const CustomTecnologies = ({tecnologies}) => {
     <span key={id} className="m-1">
     <img src={e} className="img-fluid icono" alt="..."></img>
     </span>
-
     ));
 
   }

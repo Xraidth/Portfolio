@@ -1,10 +1,10 @@
 import React from 'react'
 import { CustomRows } from './CustomRows'
 
-export const CardsTable = () => {
+export const CardsTable = ({card_filter}) => {
   return (
     <table>
-   <CustomRows></CustomRows>
+   <CustomRows card_filter={card_filter}></CustomRows>
     </table>
   )
 }

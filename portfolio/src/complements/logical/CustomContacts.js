@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomContact from './CustomContact.js'
+import CustomContact from '../visual/CustomContact.js'
 
 
 const CustomContacts = () => {

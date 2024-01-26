@@ -1,23 +1,27 @@
 
 
 import './App.css';
-import { CardsTable } from './complements/CardsTable';
+import { CardsTable } from './complements/logical/CardsTable';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import CustomNav from './complements/CustomNav';
-import CustomContacts from './complements/CustomContacts';
+import CustomNav from './complements/visual/CustomNav';
+import CustomContacts from './complements/logical/CustomContacts';
 
-
+import { useState } from 'react';
 
 
 function App() {
+
+  const [filter, setfilter] = useState('');
+
+  const getStringFilter = (txt_filter)=> (setfilter(txt_filter));
   
   return (
     <div className="App">
 
       <header className='App-header'>
-        <CustomNav></CustomNav>
+        <CustomNav handleInputChang ={getStringFilter} ></CustomNav>
       </header>
 
       <div className="App-body">
@@ -27,7 +31,7 @@ function App() {
             </span>
         </div>
         <div className="App-SubBG scroll-both">
-        <CardsTable></CardsTable>
+        <CardsTable card_filter={filter}></CardsTable>
         </div>
 
         <div className='App-footer'>
@@ -41,3 +45,5 @@ function App() {
 }
 
 export default App;
+
+
