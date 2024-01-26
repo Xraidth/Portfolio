@@ -1,0 +1,10 @@
+Conversor de Monedas	Desarrolla una aplicación que permita a los usuarios convertir entre diferentes monedas. Puedes usar una API para obtener tasas de cambio en tiempo real.
+To-Do App	Crea una aplicación de lista de tareas con funciones como agregar, editar y eliminar tareas. Puedes expandirlo agregando funcionalidades como categorías, fechas de vencimiento y recordatorios.
+Blog Personal	Desarrolla un blog donde puedas escribir y publicar tus propios artículos. Puedes agregar funcionalidades como comentarios, etiquetas, y un sistema de búsqueda.
+Red Social Simple	Construye una pequeña red social donde los usuarios puedan registrarse, publicar mensajes, seguir a otros usuarios y comentar en publicaciones.
+Calculadora de Gastos	Crea una aplicación que permita a los usuarios realizar un seguimiento de sus gastos mensuales. Puedes incluir gráficos y estadísticas para visualizar los patrones de gastos.
+Juego de Memoria	Desarrolla un juego de memoria donde los usuarios deben hacer coincidir cartas. Puedes hacerlo más desafiante agregando un temporizador y puntajes.
+Generador de Contraseñas	Crea una herramienta que genere contraseñas seguras basadas en ciertos criterios, como longitud, uso de caracteres especiales, etc.
+Aplicación del Tiempo	Crea una aplicación que muestre la información meteorológica. Puedes utilizar una API para obtener datos en tiempo real y mostrar pronósticos a varios días.
+Plataforma de Aprendizaje en Línea	Desarrolla una plataforma donde los usuarios puedan registrarse, tomar cursos y realizar evaluaciones. Incluye un sistema de autenticación y seguimiento del progreso.
+Aplicación de Chat en Tiempo Real	Crea una aplicación de chat que permita a los usuarios registrarse, unirse a salas de chat y enviar mensajes en tiempo real. Puedes implementar funcionalidades como emojis y notificaciones.

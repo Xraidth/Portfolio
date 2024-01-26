@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import CustomTecnologies from './CustomTecnologies';
+import CustomTecnologies from './CustomTecnologies.js';
 
 export const CustomCard = ({title, body, img, tecnologies, direction_card}) => {
 

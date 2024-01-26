@@ -1,7 +1,7 @@
 import {React,
   // useState
   } from 'react'
-import { CustomCard } from '../visual/CustomCard'
+import { CustomCard } from '../visual/CustomCard.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
@@ -47,7 +47,7 @@ export const CustomRows = ({card_filter}) => {
   ];
   
   const filteredDatos = cardsData.filter((e)=> e.title.toLowerCase().includes(card_filter.toLocaleLowerCase()));
-  const rows = sortCells(createcards(filteredDatos), 3);
+  const rows = sortCells(createcards(filteredDatos), CalculateTableSize(cardsData));
 
   return (
     <tbody>
@@ -63,6 +63,15 @@ function createcards(cardsData){
     </td>
     ));
   return cards
+
+}
+
+function CalculateTableSize(cardsData){
+  
+  if(window.innerWidth < 767){
+   return cardsData.length; 
+  }
+  else {return 3;}
 
 }
 
