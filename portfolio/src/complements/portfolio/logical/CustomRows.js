@@ -44,6 +44,16 @@ export const CustomRows = ({card_filter}) => {
       ],
       direction_card: 'https://github.com/Xraidth/WebServer.git'
     }
+    ,
+    {
+      title: "CurrenciesConverter",
+      body: "The fastest converter",
+      img: './CurrenciConverter.png',
+      tecnologies:[
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+      ],
+      direction_card: '/CurrenciesConverter'
+    }
   ];
   
   const filteredDatos = cardsData.filter((e)=> e.title.toLowerCase().includes(card_filter.toLocaleLowerCase()));

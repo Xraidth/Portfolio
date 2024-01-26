@@ -70,6 +70,7 @@ overflow: auto;
 
 .custom-card{
   width: 17.4rem;
+  height: 243px !important;
   margin: 10px;
   z-index: 200;
 }
@@ -164,4 +165,26 @@ overflow: auto;
     
   
 
+}
+/*--------------------------------------*/
+
+
+.custompagemoneyconverter{
+  background-color: #000000;
+  height: 100vh;
+}
+
+.customh1moneyconverter{
+  margin-top: 10%;
+}
+
+.CustomConvert{
+  margin-top: 5%;
+  background-color: rgb(43, 42, 42);
+  border-radius: 20px;
+  padding: 2%;
+}
+
+.CustomConvert:hover{
+  border: solid 1px #1587EF;
 }
