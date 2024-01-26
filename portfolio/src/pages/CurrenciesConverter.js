@@ -1,4 +1,5 @@
 import React from 'react'
+import MConverter from '../complements/CurrenciesConverter/visual/MConverter'
 
 const CurrenciesConverter = () => {
   return (
@@ -7,19 +8,8 @@ const CurrenciesConverter = () => {
         <h1>
         Currencies Converter
         </h1>
-
-
-        <div>
-        <label></label>
-        <input />
-        <select></select>
-        </div>
         
-
-
-        
-        
-        
+        <MConverter />
     </div>
         
       
