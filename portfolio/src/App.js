@@ -53,6 +53,9 @@ import { BrowserRouter as Router, Route, Routes
 import Webportfolio from './pages/Webportfolio';
 import CurrenciesConverter from './pages/CurrenciesConverter.js';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+
 
 const Home = <Webportfolio />;
 const MoneyConverter = <CurrenciesConverter />
@@ -62,7 +65,6 @@ const Contacto = <div>¡Contáctanos en esta página!</div>;
 const App = () => {
   return (
     <Router>
-        
       <Routes>
       <Route path="/" exact element={Home} />
         <Route path="/CurrenciesConverter" element={MoneyConverter} />

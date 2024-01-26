@@ -1,6 +1,6 @@
 import {React, useEffect, useState} from 'react'
 
-const CurrenciesOptions = ({name}) => {
+const CurrenciesOptions = ({name, funct_selec}) => {
 
     const [money_options, setMoney_options] = useState([]);
     
@@ -41,10 +41,13 @@ const CurrenciesOptions = ({name}) => {
         </option>
       ));
     
-
+      function handleChange(e)
+      {
+        funct_selec(e.target.value);
+      }
 
   return (
-    <select name={name} id={name}>
+    <select name={name} id={name} onChange={handleChange} className='form-select'>
     {tags_options_money}
     </select>
   )
