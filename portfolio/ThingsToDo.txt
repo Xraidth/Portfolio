@@ -1,10 +1,30 @@
-Conversor de Monedas	Desarrolla una aplicación que permita a los usuarios convertir entre diferentes monedas. Puedes usar una API para obtener tasas de cambio en tiempo real.
-To-Do App	Crea una aplicación de lista de tareas con funciones como agregar, editar y eliminar tareas. Puedes expandirlo agregando funcionalidades como categorías, fechas de vencimiento y recordatorios.
-Blog Personal	Desarrolla un blog donde puedas escribir y publicar tus propios artículos. Puedes agregar funcionalidades como comentarios, etiquetas, y un sistema de búsqueda.
-Red Social Simple	Construye una pequeña red social donde los usuarios puedan registrarse, publicar mensajes, seguir a otros usuarios y comentar en publicaciones.
-Calculadora de Gastos	Crea una aplicación que permita a los usuarios realizar un seguimiento de sus gastos mensuales. Puedes incluir gráficos y estadísticas para visualizar los patrones de gastos.
-Juego de Memoria	Desarrolla un juego de memoria donde los usuarios deben hacer coincidir cartas. Puedes hacerlo más desafiante agregando un temporizador y puntajes.
-Generador de Contraseñas	Crea una herramienta que genere contraseñas seguras basadas en ciertos criterios, como longitud, uso de caracteres especiales, etc.
-Aplicación del Tiempo	Crea una aplicación que muestre la información meteorológica. Puedes utilizar una API para obtener datos en tiempo real y mostrar pronósticos a varios días.
-Plataforma de Aprendizaje en Línea	Desarrolla una plataforma donde los usuarios puedan registrarse, tomar cursos y realizar evaluaciones. Incluye un sistema de autenticación y seguimiento del progreso.
-Aplicación de Chat en Tiempo Real	Crea una aplicación de chat que permita a los usuarios registrarse, unirse a salas de chat y enviar mensajes en tiempo real. Puedes implementar funcionalidades como emojis y notificaciones.
+Generador de Contraseñas:
+Esta aplicación implica lógica básica y manipulación de cadenas. Es un proyecto relativamente simple y práctico.
+
+-->Blog Personal:
+Crear un blog personal con funciones como escribir y publicar artículos, comentarios, etiquetas y búsqueda puede ser más complejo en términos de interacción con bases de datos y manejo de usuarios.
+
+---->Ecomerce(Tienda online)
+
+Aplicación del Tiempo:
+Crear una aplicación meteorológica con datos en tiempo real y pronósticos a varios días puede ser un proyecto desafiante, ya que implica trabajar con APIs externas, procesamiento de datos y presentación gráfica.
+
+To-Do App:
+Crear una aplicación de lista de tareas con funciones básicas como agregar, editar y eliminar tareas. Puedes expandirlo gradualmente agregando funcionalidades adicionales.
+
+Calculadora de Gastos:
+Una aplicación que permite a los usuarios realizar un seguimiento de sus gastos mensuales. Puede implicar manipulación de datos y creación de gráficos simples.
+
+Red Social Simple:
+Construir una red social implica lógica de usuarios, relaciones entre ellos, publicaciones, comentarios, etc. Puede ser un proyecto desafiante, pero aún así, una versión simple puede ser abordada por un programador junior.
+
+Aplicación de Chat en Tiempo Real:
+Desarrollar una aplicación de chat en tiempo real puede ser más complejo debido a la sincronización en tiempo real y la gestión de múltiples usuarios en salas de chat.
+
+Plataforma de Aprendizaje en Línea:
+Desarrollar una plataforma de aprendizaje en línea es probablemente uno de los proyectos más complejos de la lista. Implica manejo de usuarios, cursos, evaluaciones, autenticación y seguimiento del progreso del usuario.
+
+
+
+
+
