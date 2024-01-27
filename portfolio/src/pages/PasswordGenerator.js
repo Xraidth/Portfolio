@@ -7,7 +7,7 @@ const PasswordGenerator = () => {
     const setFavicon = () => {
     const link = document.querySelector("link[rel~='icon']");
     if (link !== null) {
-        link.href = './CurrenciConverter.ico';
+        link.href = './PasswordGenerator.ico';
         document.title ="CurrenciesConverter"
       }
     };

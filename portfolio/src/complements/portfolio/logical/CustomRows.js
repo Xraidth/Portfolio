@@ -12,15 +12,26 @@ export const CustomRows = ({card_filter}) => {
   
   const cardsData = [
     {
-      title: "UTNFRRO Website",
-      body: "My first website",
-      img: './student1.png',
+      title: "CurrenciesConverter",
+      body: "The fastest converter",
+      img: './CurrenciConverter.png',
       tecnologies:[
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
       ],
-      direction_card: 'https://utnfrroproyecto2024.000webhostapp.com/'
+      direction_card: '/CurrenciesConverter'
+    },
+    {
+      title: "PasswordGenerator",
+      body: "The best password generator",
+      img: './PasswordGenerator.png',
+      tecnologies:[
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
+      ],
+      direction_card: '/PasswordGenerator'
     },
     {
       title: "TPI-Academia",
@@ -43,17 +54,20 @@ export const CustomRows = ({card_filter}) => {
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg'
       ],
       direction_card: 'https://github.com/Xraidth/WebServer.git'
-    }
-    ,
+    },
     {
-      title: "CurrenciesConverter",
-      body: "The fastest converter",
-      img: './CurrenciConverter.png',
+      
+      title: "UTNFRRO Website",
+      body: "My first website",
+      img: './student1.png',
       tecnologies:[
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
       ],
-      direction_card: '/CurrenciesConverter'
+      direction_card: 'https://utnfrroproyecto2024.000webhostapp.com/'
     }
+   
   ];
   
   const filteredDatos = cardsData.filter((e)=> e.title.toLowerCase().includes(card_filter.toLocaleLowerCase()));
