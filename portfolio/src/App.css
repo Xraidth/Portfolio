@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Dancing+Script&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 
 .App {
   text-align: center;
@@ -187,4 +191,29 @@ overflow: auto;
 
 .CustomConvert:hover{
   border: solid 1px #1587EF;
+}
+
+.custom-blog-logo{
+  font-family: 'Bitter', serif;
+font-family: 'Dancing Script', cursive;
+
+}
+.custom-article-title{  
+  font-size: 25px;
+font-family: 'Playfair Display', serif;
+font-weight: bold;
+}
+.custom-article-intro{
+  font-size: 16px;
+  margin-top: 30px;
+}
+.custom-article-conclu{
+  font-size: 16px;
+  margin-top: 60px;
+}
+.custom-article-body{
+  margin-top: 30px;
+}
+.custom-article-date{
+font-size: 15px;
 }

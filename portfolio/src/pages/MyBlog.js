@@ -5,7 +5,9 @@ const MyBlog = () => {
   return (
     <div className='mt-3'>
     <div className='d-flex flex-column align-items-center justify-content-evenly'>
-      <h1>MyBlog</h1>
+      
+      <h1 className="custom-blog-logo">MyBlog</h1>
+      
       <hr/>
       <EnListBlogs/>
     </div>
