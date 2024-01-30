@@ -1,8 +1,11 @@
-Generador de Contraseñas:
-Esta aplicación implica lógica básica y manipulación de cadenas. Es un proyecto relativamente simple y práctico.
 
 -->Blog Personal:
 Crear un blog personal con funciones como escribir y publicar artículos, comentarios, etiquetas y búsqueda puede ser más complejo en términos de interacción con bases de datos y manejo de usuarios.
+
+Mejoras
+Considerando los períodos de inactividad o realiza operaciones más esporádicas, 
+puede ser beneficioso conectar y cerrar la conexión cada vez que sea necesario con la base de datos
+
 
 ---->Ecomerce(Tienda online)
 
