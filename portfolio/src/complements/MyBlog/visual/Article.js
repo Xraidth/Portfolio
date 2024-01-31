@@ -2,8 +2,8 @@ import React from 'react'
 
 const Article = ({title, introduction, body, conclusion, art_date}) => {
   return (
-    <div>
-      <h2 className='custom-article-title '>{title}</h2>
+    <div className="custom-article-bg">
+      <h2 className='custom-article-title'>{title}</h2>
       <h5 className='custom-article-intro'>Introduction</h5>
       <p>
       <em>{introduction}</em> 

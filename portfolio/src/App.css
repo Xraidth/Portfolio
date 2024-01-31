@@ -217,3 +217,13 @@ font-weight: bold;
 .custom-article-date{
 font-size: 15px;
 }
+.custom-article-pr-bg{
+  
+  width: 70vw;
+}
+.custom-article-bg{
+  background: red;
+  margin-top: 50px;
+  width: 60vw;
+  
+}
