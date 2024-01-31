@@ -218,12 +218,11 @@ font-weight: bold;
 font-size: 15px;
 }
 .custom-article-pr-bg{
-  
-  width: 70vw;
+  width: 65vw;
 }
 .custom-article-bg{
-  background: red;
-  margin-top: 50px;
+  border-bottom: solid 1px black;
+  margin-top: 30px;
   width: 60vw;
   
 }
