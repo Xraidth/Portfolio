@@ -1,19 +1,34 @@
 import { React, useEffect, useState} from "react"
-import Article from "../visual/Article";
+import ListArticles from '../visual/ListArticles.js'
 
 
-const EnListBlogs = () => {
+const EnListBlogs = ({blogs_filter}) => {
 
   const articles = 
   [
-  {
-      title:'Love Phases',
-      introduction:'Las faces del amor son importantes porque requieren un personalismo base sistentable para aquellos que tienen fe',
-      body:'lorem',
-      conclusion:'Conclucion de todos los mejores',
-      art_date:'30/01/2024'
-  }
-  
+    {
+      "title": "Avances en Inteligencia Artificial",
+      "introduction": "En este artículo, exploraremos los últimos avances en inteligencia artificial (IA). Desde algoritmos de aprendizaje profundo hasta aplicaciones prácticas en diversas industrias, analizaremos cómo la IA está transformando nuestro mundo.",
+      "body": "Desde la medicina hasta la conducción autónoma, la IA ha demostrado ser una fuerza impulsora del progreso. Examinaremos casos de estudio y discutiremos los desafíos éticos que surgen con el rápido desarrollo de esta tecnología.",
+      "conclusion": "A medida que la IA continúa evolucionando, es crucial mantener un diálogo abierto sobre sus implicaciones. Este artículo busca proporcionar una visión general de la IA y fomentar una comprensión más profunda de su impacto en nuestra sociedad.",
+      "art_date": "2024-03-15T08:30:00.000Z",
+      
+    },
+    {
+      "title": "Innovación en los Negocios del Futuro",
+      "introduction": "Exploraremos las tendencias emergentes que están dando forma a la innovación empresarial en la era digital. Desde la inteligencia artificial hasta la blockchain, analizaremos cómo las empresas están adoptando nuevas tecnologías para mantenerse competitivas.",
+      "body": "Con ejemplos de empresas líderes en la industria, examinaremos estrategias innovadoras y casos de éxito. También abordaremos los desafíos que las empresas pueden enfrentar al implementar cambios disruptivos en sus modelos de negocio.",
+      "conclusion": "La capacidad de adaptación y la disposición para abrazar la innovación son cruciales para el éxito empresarial en el futuro. Este artículo busca inspirar a los líderes empresariales a explorar nuevas oportunidades y afrontar los desafíos con creatividad.",
+      "art_date": "2024-02-25T15:45:00.000Z"
+    },
+    {
+      
+      "title": "Mente Sana, Cuerpo Sano",
+      "introduction": "Descubre la conexión entre la salud mental y física en este artículo dedicado al bienestar integral. Exploraremos prácticas que promueven la armonía entre cuerpo y mente para lograr una vida más plena.",
+      "body": "Desde técnicas de meditación hasta consejos de alimentación saludable, abordaremos cómo pequeños cambios en el estilo de vida pueden tener un impacto significativo en tu bienestar general. Además, examinaremos la importancia del equilibrio entre trabajo y descanso.",
+      "conclusion": "La clave para una vida plena radica en cuidar tanto de tu salud mental como física. Esperamos que este artículo inspire a adoptar hábitos que fomenten un estado óptimo de bienestar.",
+      "art_date": "2024-02-20T12:00:00.000Z"
+    }  
 ];
 
 
@@ -31,38 +46,27 @@ const EnListBlogs = () => {
       });
   
       const data = await response.json();
-      console.log('Success:', data);
+      
       if(data){
       setData_art(data);
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error when trying to connect to the server (404)");
     }
   }
-  
-  
 
   useEffect(() => {
     getBlogData();
-      
-       
-    },[data_art]);
+    },[]);
     
-
-  
-
-    const articles_arm = data_art.map(function(e, index){
-    return(<Article key={index} title={e.title} introduction={e.introduction} body={e.body} conclusion = {e.conclusion} art_date={e.art_date}/>)
-    });
-    
-
-
   return (
-    <div className="custom-article-pr-bg d-flex flex-column align-items-center justify-content-evenly bg-primary">
-      {articles_arm}
+    <div className="">
+    <ListArticles data_art={data_art} blogs_filter={blogs_filter}/>
     </div>
   )
 }
 
 export default EnListBlogs
+
+
 

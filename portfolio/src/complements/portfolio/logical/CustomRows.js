@@ -47,7 +47,7 @@ export const CustomRows = ({card_filter}) => {
     },
     {
       title: "WebService",
-      body: "User Management Web API Server",
+      body: "Management API Web server",
       img: './nodejs.png',
       tecnologies:[
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
@@ -66,6 +66,18 @@ export const CustomRows = ({card_filter}) => {
         'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
       ],
       direction_card: 'https://utnfrroproyecto2024.000webhostapp.com/'
+    },
+    {
+      
+      title: "MyBlog",
+      body: "This is my personal blog!",
+      img: './MyBlog.png',
+      tecnologies:[
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+        'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
+      ],
+      direction_card: 'http://localhost:3000/MyBlog/'
     }
    
   ];
