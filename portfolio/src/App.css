@@ -6,6 +6,9 @@
 .App {
   text-align: center;
   background-color: #000000;
+  background: linear-gradient(to bottom right,  #000000, #1587EF);
+  width: 100%;
+  height: 100%;
 }
 
 .App-logo {
@@ -35,8 +38,10 @@
 }
 
 .App-body {
-  background-color: black;
+  /*background-color: black;*/
+  background: linear-gradient(to bottom right,  #000000, #1587EF); /* Gradient de azul a verde */
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,13 +62,13 @@
 
 .App-SubBG{
 height: 44vh;
-width: 66.5%;
+width: 66.56%;
 margin-top: 10px ;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
-border: 1px solid #1587EF;
+/*border: 1px solid #1587EF;*/
 overflow: auto;
 }
 
@@ -85,13 +90,20 @@ overflow: auto;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid #1587EF;
-  overflow: auto;
-  margin-top: 50px;
+  /*border: 1px solid #1587EF;*/
+  
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+
+  
+  }
+
+  .App-footer-contacts-title{
+    
+    margin-top: 40px;
   }
 
 
@@ -105,6 +117,9 @@ overflow: auto;
 .icono {
   width: 30px;
 }
+.mini-icono{
+  width: 20px;
+}
 
 .custom-max-height{
   display: flex;
@@ -112,6 +127,12 @@ overflow: auto;
   overflow: hidden;
 }
 
+.App-Contactos-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 /*---------------SCROLLL----------------*/
 /* width */
@@ -128,7 +149,7 @@ overflow: auto;
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #1587EF;
   border-radius: 10px;
 }
 
@@ -149,8 +170,16 @@ overflow: auto;
 
 
 @media only screen and (max-width: 767px) {
+
+  .App-Contactos-flex{
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
   .App-SubBG{
-    height: 39vh;
+    height: 40.8vh;
     width: 90%;
     margin-top: 25px ;
     border-radius: 16px;
@@ -213,6 +242,7 @@ font-weight: bold;
 }
 .custom-article-body{
   margin-top: 30px;
+  
 }
 .custom-article-date{
 font-size: 15px;
@@ -222,15 +252,21 @@ font-size: 15px;
   
 }
 .custom-article-bg{
-  border-bottom: solid 1px black;
-  margin-top: 30px;
-  width: 60vw;
+  
+  margin-top: 10px;
+  width: 63vw;
+  background-color: rgb(250, 250, 250);
+  border-radius: 20px;
+  padding: 20px;
   
 }
 
 .myblog_body{
-  /*background-color: #b6c9ceb4 !important; */
-  background: linear-gradient(to right, #b6c9ceb4, #6faabbb4); 
+  background-color: #b6c9ceb4 !important; 
+  border-radius: 20px;
+  background: linear-gradient(to top left,   rgba(0, 0, 0, 0.3), rgba(21, 135, 239, 0.8));
+  
+  height: 100%;
 }
 
 .custom-blog-nav-span{
@@ -238,4 +274,13 @@ font-size: 15px;
 }
 .custom-min-height-100{
   min-height: 100vh;
+}
+
+.text-xs{
+  font-size: 10px;
+}
+
+.custom-contact-email {
+  margin-top: auto;
+  padding: 0px 10px 0px 10px;
 }
