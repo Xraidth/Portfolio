@@ -8,79 +8,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 
 
-export const CustomRows = ({card_filter}) => {
+export const CustomRows = ({card_filter, cardsData}) => {
   
-  const cardsData = [
-    {
-      title: "CurrenciesConverter",
-      body: "The fastest converter",
-      img: './CurrenciConverter.png',
-      tecnologies:[
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
-      ],
-      direction_card: '/CurrenciesConverter'
-    },
-    {
-      title: "PasswordGenerator",
-      body: "The best password generator",
-      img: './PasswordGenerator.png',
-      tecnologies:[
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
-      ],
-      direction_card: '/PasswordGenerator'
-    },
-    {
-      title: "TPI-Academia",
-      body: "The Academic Management System",
-      img: './academia1.png',
-      tecnologies:[
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg',
-        'https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg'
-      ],
-      direction_card: 'https://github.com/fabriortenzi/TPI-Academia'
-    },
-    {
-      title: "WebService",
-      body: "Management API Web server",
-      img: './nodejs.png',
-      tecnologies:[
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg'
-      ],
-      direction_card: 'https://github.com/Xraidth/WebServer.git'
-    },
-    {
-      
-      title: "UTNFRRO Website",
-      body: "My first website",
-      img: './student1.png',
-      tecnologies:[
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
-      ],
-      direction_card: 'https://utnfrroproyecto2024.000webhostapp.com/'
-    },
-    {
-      
-      title: "MyBlog",
-      body: "This is my personal blog!",
-      img: './MyBlog.png',
-      tecnologies:[
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
-      ],
-      direction_card: 'http://localhost:3000/MyBlog/'
-    }
-   
-  ];
   
   const filteredDatos = cardsData.filter((e)=> e.title.toLowerCase().includes(card_filter.toLocaleLowerCase()));
   const rows = sortCells(createcards(filteredDatos), CalculateTableSize(cardsData));
@@ -108,7 +37,6 @@ function CalculateTableSize(cardsData){
    return cardsData.length; 
   }
   else {return 3;}
-
 }
 
 

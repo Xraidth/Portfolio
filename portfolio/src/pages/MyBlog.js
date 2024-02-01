@@ -25,9 +25,9 @@ const MyBlog = () => {
   }
  
   return (
-    <div className='myblog_body'>
+    <div className=''>
     <div className='d-flex flex-column align-items-center justify-content-start custom-min-height-100'>
-      <div className='mb-4 w-100'>
+      <div className='w-100'>
       <MyBlogNav handleFilter ={handleFilter}/>
       </div>
       
