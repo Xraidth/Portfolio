@@ -4,7 +4,7 @@ const Article = ({title, introduction, body, conclusion, art_date}) => {
 
   return (
     <div className="custom-article-bg">
-      <h2 className='custom-article-title'>{title}</h2>
+      <h2 className='text-center custom-article-title'>{title}</h2>
       <h5 className='custom-article-intro'>Introduction</h5>
       <p>
       <em>{introduction}</em> 

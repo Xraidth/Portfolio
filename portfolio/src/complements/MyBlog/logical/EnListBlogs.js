@@ -60,7 +60,7 @@ const EnListBlogs = ({blogs_filter}) => {
     },[]);
     
   return (
-    <div className="">
+    <div className="myblog_body">
     <ListArticles data_art={data_art} blogs_filter={blogs_filter}/>
     </div>
   )

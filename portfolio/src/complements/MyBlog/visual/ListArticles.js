@@ -17,7 +17,7 @@ const ListArticles = ({data_art,blogs_filter}) => {
 
 
   return (
-    <div className="custom-article-pr-bg d-flex flex-column align-items-center justify-content-between">
+    <div className="custom-article-pr-bg d-flex flex-column align-items-center justify-content-between ">
       
       {articles_arm}
     </div>

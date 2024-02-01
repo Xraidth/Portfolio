@@ -219,10 +219,23 @@ font-size: 15px;
 }
 .custom-article-pr-bg{
   width: 65vw;
+  
 }
 .custom-article-bg{
   border-bottom: solid 1px black;
   margin-top: 30px;
   width: 60vw;
   
+}
+
+.myblog_body{
+  /*background-color: #b6c9ceb4 !important; */
+  background: linear-gradient(to right, #b6c9ceb4, #6faabbb4); 
+}
+
+.custom-blog-nav-span{
+  padding: 10px;
+}
+.custom-min-height-100{
+  min-height: 100vh;
 }
