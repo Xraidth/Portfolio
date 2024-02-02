@@ -21,7 +21,7 @@ export const cardsData = [
       'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
       'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
     ],
-    direction_card: 'http://localhost:3000/MyBlog/'
+    direction_card: '/MyBlog'
   }
   ,
   {
