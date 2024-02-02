@@ -178,7 +178,7 @@ overflow: auto;
   }
   
   .App-SubBG{
-    height: 40.8vh;
+    height: 265px;
     width: 90%;
     margin-top: 25px ;
     border-radius: 16px;
@@ -264,9 +264,10 @@ font-size: 15px;
   background-color: #b6c9ceb4 !important; 
   border-radius: 20px;
   background: linear-gradient(to top left,   rgba(0, 0, 0, 0.3), rgba(21, 135, 239, 0.8));
-  
   height: 100%;
 }
+
+
 
 .custom-blog-nav-span{
   padding: 10px;
