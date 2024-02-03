@@ -5,15 +5,15 @@ const Article = ({title, introduction, body, conclusion, art_date}) => {
   return (
     <div className="custom-article-bg">
       <h2 className='text-center custom-article-title'>{title}</h2>
-      <h5 className='custom-article-intro'>Introduction</h5>
+      <h5 className=' custom-article-intro'>Introduction</h5>
       <p>
-      <em>{introduction}</em> 
+      <em className='custom-article-body2'>{introduction}</em> 
       </p>
-      <p  className='custom-article-body'>
+      <p className='custom-article-body'>
       {body}
       </p>
       <h5 className='custom-article-conclu'>Conclusion</h5>
-      <p>
+      <p className='custom-article-body2'>
       {conclusion}
       </p>
       <br></br>

@@ -28,7 +28,7 @@ const MyBlogNav = ({handleFilter}) => {
         
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={handletxtSearch}/>
-        <button className="btn btn-outline-success" type="submit" onClick={handleClick}>Search</button>
+        <button className="btn btn-outline-light" type="submit" onClick={handleClick}>Search</button>
       </form>
       </div>
       

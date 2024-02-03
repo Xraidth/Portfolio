@@ -42,6 +42,8 @@
   background: linear-gradient(to bottom right,  #000000, #1587EF); /* Gradient de azul a verde */
   min-height: 100vh;
   min-width: 100vw;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +57,7 @@
 }
 
 .App-body-title-div{
-  margin-top: 50px;
+  margin-top: 180px;
   width: 149vh;
   display:flex;
 }
@@ -64,11 +66,22 @@
 height: 265px;
 
 margin-top: 10px ;
+margin-bottom: 150px;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 overflow: auto;
+}
+
+.w-10{
+width: 100px;
+}
+
+.App-about-me{
+  margin-top: 150px;
+  margin-bottom: 10px;
+  
 }
 
 .custom-card-link{
@@ -83,13 +96,13 @@ overflow: auto;
   z-index: 200;
 }
 
-.App-Contactos{
+.App-content-glass{
   height: 10vh;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  /*border: 1px solid #1587EF;*/
+  
   
   margin-top: 5px;
   display: flex;
@@ -100,11 +113,11 @@ overflow: auto;
   
   }
 
-  .App-footer-contacts-title{
-    
-    margin-top: 40px;
-  }
-
+ 
+.App-Contact{
+  margin-top: 85px;
+  
+}
 
 
 .custom-tr{
@@ -178,7 +191,7 @@ overflow: auto;
   }
   
   .App-SubBG{
-    height: 265px;
+    height: 100%;
     width: 90%;
     margin-top: 25px ;
     border-radius: 16px;
@@ -186,11 +199,13 @@ overflow: auto;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid #1587EF;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     }
 
     .App-body-title-div{
-      margin-top: 50px ;
+      
+    
       display:flex;
       justify-content: center;  
     }
@@ -198,7 +213,7 @@ overflow: auto;
   
 
 }
-/*--------------------------------------*/
+
 
 
 .custompagemoneyconverter{
@@ -224,46 +239,66 @@ overflow: auto;
 .custom-blog-logo{
   font-family: 'Bitter', serif;
 font-family: 'Dancing Script', cursive;
+color:rgb(250,250,250);
 
 }
+
 .custom-article-title{  
   font-size: 25px;
-font-family: 'Playfair Display', serif;
+font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;
+color:rgb(250,250,250);
 }
+
+
 .custom-article-intro{
   font-size: 16px;
   margin-top: 30px;
+  color: rgb(212, 214, 214);
 }
 .custom-article-conclu{
   font-size: 16px;
-  margin-top: 60px;
+  margin-top: 35px;
+  color: rgb(212, 214, 214);
 }
+
+
+/*---------------------*/
+
 .custom-article-body{
   margin-top: 30px;
-  
+  color: rgb(199,202,204);
+}
+
+.custom-article-body2{
+  margin-top: 0px;
+  color: rgb(199,202,204);
 }
 .custom-article-date{
 font-size: 15px;
+color: rgb(212, 214, 214);
 }
 .custom-article-pr-bg{
-  width: 65vw;
-  
+background-color:rgb(3, 3,3);
 }
 .custom-article-bg{
   
   margin-top: 10px;
-  width: 63vw;
-  background-color: rgb(250, 250, 250);
+  width: 80%;
+  background-color: rgb(26, 26, 27);
   border-radius: 20px;
+  border: solid 2px  rgb(117, 117, 117);
   padding: 20px;
   
 }
+.custom-article-total-bg{
+  background-color: rgb(3,3,3);
+}
 
 .myblog_body{
-  background-color: #b6c9ceb4 !important; 
+  
   border-radius: 20px;
-  background: linear-gradient(to top left,   rgba(0, 0, 0, 0.3), rgba(21, 135, 239, 0.8));
+  
   height: 100%;
 }
 

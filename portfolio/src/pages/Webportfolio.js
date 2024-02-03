@@ -14,6 +14,7 @@ import {cardsData, contacts_obj} from '../complements/portfolio/Data/PortFolioDa
 
 import CustomBottomBox from '../complements/portfolio/visual/CustomBottomBox.js';
 
+
 const my_email = "ignacio.rodriguez.sistemas@gmail.com";
 
 function Webportfolio() {
@@ -32,33 +33,46 @@ function Webportfolio() {
       </header>
 
       <div className="App-body">
-        <div className='App-body-title-div'>
+
+        <div className='d-flex justify-content-between align-items-center App-about-me'>
+          <span className='w-10 me-4'>
+        <img src="./PerfilePicture.png" className="img-fluid rounded-circle" alt="..."></img>
+          </span>
+          <div className='App-content-glass ms-4' id='App-Contact'>
+        <p className='p-4'>Hello word</p>
+          </div>    
+        </div>
+
+        <div className='App-Contact'>
+          <div>
+            <h5>Contact</h5>
+          </div>
+          <div className='App-Contactos-flex'>
+            <div className='App-content-glass'>
+              <CustomContacts contacts_obj={contacts_obj} />
+            </div>
+            <div className='App-content-glass ms-3'>
+              <CustomContactEmail my_email={my_email} />
+            </div>
+            <div className='App-content-glass ms-2'>
+              <CustomBottomBox textToCopy={my_email} />
+            </div>
+          </div>
+        </div>
+
+        <div className='App-body-title-div' id='App-Projects'>
           <span className='App-body-title-span'>
-            <h5>My Proyects</h5>
+            <h5>My Projects</h5>
           </span>
         </div>
         <div className="App-SubBG scroll-both">
           <CardsTable card_filter={filter} cardsData={cardsData}></CardsTable>
         </div>
 
-        <div className='App-footer'>
+        
 
-          <div className='App-footer-contacts-title'>
-            <h5>Contacts</h5>
-          </div>
-          <div className='App-Contactos-flex'>
-            <div className='App-Contactos'>
-              <CustomContacts contacts_obj={contacts_obj} />
-            </div>
-            <div className='App-Contactos ms-3'>
-              <CustomContactEmail my_email={my_email} />
-            </div>
-            <div className='App-Contactos ms-2'>
-              <CustomBottomBox textToCopy={my_email} />
-            </div>
-          </div>
 
-        </div>
+       
       </div>
     </div>
   );
