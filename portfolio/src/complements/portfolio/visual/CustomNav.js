@@ -26,19 +26,19 @@ const CustomNav = ({handleInputChang}) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active link-light" aria-current="page" href="https://chat.openai.com/c/8bc467f7-0c11-4f04-b6d0-6d07113ddded">Home</a>
+              <a className="nav-link active link-light" aria-current="page" href="/">Home</a>
             </li>
             <li className="nav-item">
               <a className="nav-link link-light" href="https://chat.openai.com/c/8bc467f7-0c11-4f04-b6d0-6d07113ddded">About Me</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link link-light" href="https://chat.openai.com/c/8bc467f7-0c11-4f04-b6d0-6d07113ddded">Projects</a>
+              <a className="nav-link link-light" href="#App-Projects">Projects</a>
             </li>
             <li className="nav-item">
               <a className="nav-link link-light" href="https://chat.openai.com/c/8bc467f7-0c11-4f04-b6d0-6d07113ddded">Services</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link link-light" href="https://chat.openai.com/c/8bc467f7-0c11-4f04-b6d0-6d07113ddded">Contact</a>
+              <a className="nav-link link-light" href="#App-Contact">Contact</a>
             </li>
             
           </ul>

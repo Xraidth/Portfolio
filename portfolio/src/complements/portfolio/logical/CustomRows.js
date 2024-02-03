@@ -10,7 +10,6 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 export const CustomRows = ({card_filter, cardsData}) => {
   
-  
   const filteredDatos = cardsData.filter((e)=> e.title.toLowerCase().includes(card_filter.toLocaleLowerCase()));
   const rows = sortCells(createcards(filteredDatos), CalculateTableSize(cardsData));
 

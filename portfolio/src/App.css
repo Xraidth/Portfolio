@@ -42,6 +42,8 @@
   background: linear-gradient(to bottom right,  #000000, #1587EF); /* Gradient de azul a verde */
   min-height: 100vh;
   min-width: 100vw;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +57,7 @@
 }
 
 .App-body-title-div{
-  margin-top: 50px;
+  margin-top: 180px;
   width: 149vh;
   display:flex;
 }
@@ -64,11 +66,22 @@
 height: 265px;
 
 margin-top: 10px ;
+margin-bottom: 150px;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 overflow: auto;
+}
+
+.w-10{
+width: 100px;
+}
+
+.App-about-me{
+  margin-top: 150px;
+  margin-bottom: 10px;
+  
 }
 
 .custom-card-link{
@@ -100,11 +113,11 @@ overflow: auto;
   
   }
 
-  .App-footer-contacts-title{
-    
-    margin-top: 40px;
-  }
-
+ 
+.App-Contact{
+  margin-top: 85px;
+  
+}
 
 
 .custom-tr{
@@ -178,7 +191,7 @@ overflow: auto;
   }
   
   .App-SubBG{
-    height: 265px;
+    height: 100%;
     width: 90%;
     margin-top: 25px ;
     border-radius: 16px;
@@ -186,11 +199,13 @@ overflow: auto;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid #1587EF;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     }
 
     .App-body-title-div{
-      margin-top: 50px ;
+      
+    
       display:flex;
       justify-content: center;  
     }
@@ -198,7 +213,7 @@ overflow: auto;
   
 
 }
-/*--------------------------------------*/
+
 
 
 .custompagemoneyconverter{
