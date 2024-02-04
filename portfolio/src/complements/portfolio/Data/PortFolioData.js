@@ -1,3 +1,5 @@
+export const my_email = "ignacio.rodriguez.sistemas@gmail.com";
+
 export const cardsData = [
     
   {

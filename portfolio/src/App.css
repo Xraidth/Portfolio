@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 
+
+.GeneralWindow-div{
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
 .App {
   text-align: center;
   background-color: #000000;
@@ -37,13 +44,13 @@
   
 }
 
-.App-body {
-  /*background-color: black;*/
+.App-body-porfolio{
   background: linear-gradient(to bottom right,  #000000, #1587EF); /* Gradient de azul a verde */
-  min-height: 100vh;
-  min-width: 100vw;
+  /*min-height: 100vh;
+  min-width: 100vw;*/
   width: 100%;
   height: 100%;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,6 +58,8 @@
   color: white;
   z-index: 0;
 }
+
+
 
 .App-link {
   color: #61dafb;
@@ -78,7 +87,7 @@ overflow: auto;
 width: 100px;
 }
 
-.App-about-me{
+.App-profile-img{
   margin-top: 150px;
   margin-bottom: 10px;
   

@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
-
-const CustomNav = ({handleInputChang}) => {
+import { Link } from 'react-router-dom';
+const CustomNav = ({handleInputChang, handlePortfolioBodyChang}) => {
 
   const [valorInput, setValorInput] = useState('');
 
@@ -12,6 +12,14 @@ const CustomNav = ({handleInputChang}) => {
     e.preventDefault();
     handleInputChang(valorInput);
   } 
+  function handleAboutMe(e){
+    e.preventDefault();
+    handlePortfolioBodyChang('About me');
+  }
+  function handleHome(e){
+    e.preventDefault();
+    handlePortfolioBodyChang('profile');
+  }
 
 
 
@@ -26,10 +34,10 @@ const CustomNav = ({handleInputChang}) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active link-light" aria-current="page" href="/">Home</a>
+            <Link className="nav-link link-light" onClick={handleHome} to='/Home'>Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link link-light" href="https://chat.openai.com/c/8bc467f7-0c11-4f04-b6d0-6d07113ddded">About Me</a>
+            <Link className="nav-link link-light" onClick={handleAboutMe} to='/About me'>About me</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link link-light" href="#App-Projects">Projects</a>
