@@ -20,6 +20,12 @@ const CustomNav = ({handleInputChang, handlePortfolioBodyChang}) => {
     e.preventDefault();
     handlePortfolioBodyChang('profile');
   }
+  function handleProjects(e){
+    e.preventDefault();
+    handlePortfolioBodyChang('Projects');
+  }
+
+  
 
 
 
@@ -40,7 +46,7 @@ const CustomNav = ({handleInputChang, handlePortfolioBodyChang}) => {
             <Link className="nav-link link-light" onClick={handleAboutMe} to='/About me'>About me</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link link-light" href="#App-Projects">Projects</a>
+            <Link className="nav-link link-light" onClick={handleProjects} to='/Proyects'>Projects</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link link-light" href="https://chat.openai.com/c/8bc467f7-0c11-4f04-b6d0-6d07113ddded">Services</a>

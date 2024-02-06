@@ -2,11 +2,11 @@ import React from 'react'
 
 const CustomGadgetSpotify = ({type, code}) => {
   return (
-    <div className='App-content-glass ms-2'>
+    <div className=''>
     <iframe
       src={`https://open.spotify.com/embed?uri=spotify:${type}:${code}`}
-      width="500px"
-      height="100"
+      width="400px"
+      height="380px"
       frameborder="0"
       allowtransparency="true"
       allow="encrypted-media"
