@@ -12,6 +12,7 @@ import CustomProfile from '../complements/portfolio/visual/CustomProfile.js';
 import CustomAboutMe from '../complements/portfolio/visual/CustomAboutMe.js';
 
 
+import CustomProjects from '../complements/portfolio/visual/CustomProjects.js';
 function Webportfolio() {
 
   const [filter, setfilter] = useState('');
@@ -24,10 +25,21 @@ function Webportfolio() {
 
   const portfolioDirected = () => {  
     if (portfolioBody === 'profile') {
-      return <CustomProfile filter={filter} />;
+      return (<CustomProfile/>);
     } else if (portfolioBody === 'About me') {
-      return <CustomAboutMe />;
-    } else {
+      return (
+      <div className='mt-20'> 
+      <CustomAboutMe />
+      </div>
+      );
+    } 
+    else if(portfolioBody==='Projects'){
+      return(
+        <div className='m-100 h-100 mt-20'> 
+         <CustomProjects filter={filter}/>
+         </div>
+    );    
+    }else {
       return null;
     }
   };

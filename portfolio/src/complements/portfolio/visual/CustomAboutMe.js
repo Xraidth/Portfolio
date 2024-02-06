@@ -1,9 +1,13 @@
 import React from 'react'
 
+import CustomGadgetSpotify from './CustomGadgetSpotify.js'
+
 const CustomAboutMe = () => {
   return (
-    <div className='App-about-me'>
-      <p className='text-light'>
+<div className='d-flex'>
+    <div className='App-about-me'>  
+    
+      <p className='text-light m-3'>
       About me:
 
 Hello! my name is Ignacio Rodriguez. I'm passionate about programing. As a [Your Profession or Area of Specialization],
@@ -31,7 +35,18 @@ What you'll find in my content:
 
 I hope you enjoy exploring my world and sharing this exciting journey with me!
       </p>
+    
+    
+    
     </div>
+
+    <div className='App-about-me'>
+      <CustomGadgetSpotify type={'playlist'} code={'2Tt55BMgrEmNuIw3RjkvXF'}/>
+    </div>
+
+  </div>
+    
+
   )
 }
 

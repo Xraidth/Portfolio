@@ -1,15 +1,17 @@
 
-import { CardsTable } from '../logical/CardsTable.js';
+//import { CardsTable } from '../logical/CardsTable.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import CustomContacts from '../logical/CustomContacts';
 import { React } from 'react';
 import CustomContactEmail from '../visual/CustomContactEmail.js';
-import {cardsData, contacts_obj, my_email} from '../Data/PortFolioData.js'
+import {
+//  cardsData,
+   contacts_obj, my_email} from '../Data/PortFolioData.js'
 import CustomBottomBox from '../visual/CustomBottomBox.js';
 
 
-function CustomProfile({filter}) {
+function CustomProfile() {
   return (
       <div className="App-body-porfolio">
   
@@ -39,14 +41,7 @@ function CustomProfile({filter}) {
           </div>
         </div>
 
-        <div className='App-body-title-div' id='App-Projects'>
-          <span className='App-body-title-span'>
-            <h5>My Projects</h5>
-          </span>
-        </div>
-        <div className="App-SubBG scroll-both">
-          <CardsTable card_filter={filter} cardsData={cardsData}></CardsTable>
-        </div>      
+       
 
         
       </div>
@@ -58,3 +53,11 @@ export default CustomProfile;
 
 
 
+/* <div className='App-body-title-div' id='App-Projects'>
+          <span className='App-body-title-span'>
+            <h5>My Projects</h5>
+          </span>
+        </div>
+        <div className="App-SubBG scroll-both">
+          <CardsTable card_filter={filter} cardsData={cardsData}></CardsTable>
+        </div>       */
