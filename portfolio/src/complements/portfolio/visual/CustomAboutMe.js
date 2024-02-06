@@ -4,9 +4,14 @@ import CustomGadgetSpotify from './CustomGadgetSpotify.js'
 
 const CustomAboutMe = () => {
   return (
-<div className='d-flex'>
-    <div className='App-about-me'>  
-    
+<div className='d-flex justify-content-around align-items-start'>
+  <div className='d-flex flex-column justify-content-center align-items-center'>
+  <div className=' w-100 h-100 d-flex'>
+   <span className='mt-4 ms-50'>
+  <h5 className='text-light'>About me</h5>
+   </span>
+  </div>
+    <div className='App-about-me  d-flex flex-column justify-content-center align-items-center mt-3 ms-50'>  
       <p className='text-light m-3'>
       About me:
 
@@ -35,12 +40,12 @@ What you'll find in my content:
 
 I hope you enjoy exploring my world and sharing this exciting journey with me!
       </p>
-    
+</div>
     
     
     </div>
 
-    <div className='App-about-me'>
+    <div className='App-about-me App-about-me-gaget-spotify'>
       <CustomGadgetSpotify type={'playlist'} code={'2Tt55BMgrEmNuIw3RjkvXF'}/>
     </div>
 

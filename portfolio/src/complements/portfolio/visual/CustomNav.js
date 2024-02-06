@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 import { Link } from 'react-router-dom';
-const CustomNav = ({handleInputChang, handlePortfolioBodyChang}) => {
+const CustomNav = ({handleInputChang, handlePortfolioBodyChang, portfolioBody}) => {
 
   const [valorInput, setValorInput] = useState('');
 
@@ -56,10 +56,12 @@ const CustomNav = ({handleInputChang, handlePortfolioBodyChang}) => {
             </li>
             
           </ul>
+          <div className={`${portfolioBody==='Projects'? "d-block":"d-none"}`}>
           <form className="d-flex" role="search">
             <input className="form-control me-2"  onChange={handleInputChange} type="search" placeholder="Search" aria-label="Search" id='inSearch' />
             <button onClick={handleClick} className="btn btn-outline-primary" type="submit">Search</button>
           </form>
+          </div>
         </div>
       </div>
     </nav>
