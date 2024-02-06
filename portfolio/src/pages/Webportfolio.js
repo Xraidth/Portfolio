@@ -23,12 +23,13 @@ function Webportfolio() {
 
   const getPortfolioBody = (txtBodyPorfolioComponent) =>(setPortfolioBody(txtBodyPorfolioComponent));
 
+
   const portfolioDirected = () => {  
     if (portfolioBody === 'profile') {
       return (<CustomProfile/>);
     } else if (portfolioBody === 'About me') {
       return (
-      <div className='mt-20'> 
+      <div className='m-100 h-100 mt-20 App-div-about-me'> 
       <CustomAboutMe />
       </div>
       );
@@ -48,7 +49,7 @@ function Webportfolio() {
     <div className="App">
 
       <header className='App-header'>
-        <CustomNav handleInputChang={getStringFilter} handlePortfolioBodyChang={getPortfolioBody}  ></CustomNav>
+        <CustomNav handleInputChang={getStringFilter} handlePortfolioBodyChang={getPortfolioBody} portfolioBody={portfolioBody}  ></CustomNav>
       </header>
       <div className='w-100 h-100'>
       {portfolioDirected()}
