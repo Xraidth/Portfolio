@@ -57,12 +57,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import PasswordGenerator from './pages/PasswordGenerator.js';
 import MyBlog from './pages/MyBlog.js';
+import Ecommerce from './pages/Ecommerce.js';
 
 
 const Home = <Webportfolio />;
 const MoneyConverter = <CurrenciesConverter />
 const PasswordG = <PasswordGenerator />
 const MyBlogApp = <MyBlog />
+const ecommerce =<Ecommerce/>
 
 
 const App = () => {
@@ -73,6 +75,7 @@ const App = () => {
         <Route path="/CurrenciesConverter" element={MoneyConverter} />
         <Route path="/PasswordGenerator" element={PasswordG} />
         <Route path="/MyBlog" element={MyBlogApp} />
+        <Route path="/Ecommerce" element={ecommerce} />
       </Routes>
     </Router>
   );
