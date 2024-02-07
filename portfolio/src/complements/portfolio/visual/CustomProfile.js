@@ -19,12 +19,12 @@ function CustomProfile() {
           <span className='w-10 me-4'>
         <img src="./PerfilePicture.png" className="img-fluid rounded-circle" alt="..."></img>
           </span>
-          <div className='App-content-glass ms-4' id='App-Contact'>
+          <div className='App-content-glass ms-4'>
         <p className='p-4'>Hello word</p>
           </div>    
         </div>
 
-        <div className='App-Contact'>
+        <div className='App-Contact' id='App-Contact'>
           <div>
             <h5>Contact</h5>
           </div>

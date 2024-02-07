@@ -360,10 +360,77 @@ background-color:rgb(3, 3,3);
 
 
 .App-about-me-gaget-spotify{
-  margin: 5%;
+  margin: 5.5%;
   
 }
 
 .ms-50{
   margin-left: 50px;
+}
+
+/*-------------------------------------*/
+.ecommerce-header{
+  background-color: red;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ecommerce-body{
+  background-color:blue;
+  height: 75%;
+}
+.ecommerce-footer{
+  background-color:green;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ecommerce-input-search{
+  width: 90%;
+  height: 40px;
+}
+.ecommerce-option-nav{
+  width: 90%;
+  font-size: 15px;
+  background-color: red;
+}
+
+.ecommerce-option-nav-ul{
+  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: gray;
+}
+
+.ecommerce-option-nav-profile{
+  width: 100%;
+  height: 36%;
+  margin: 0;
+  padding: 0;
+  
+}
+.ecommerce-option-nav-profile-ul{
+  background-color: gray;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.ecommerce-option-footer{
+  font-size: 12px;
+  background-color: gray;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 90%;
 }
