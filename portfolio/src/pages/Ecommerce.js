@@ -1,70 +1,87 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 
 const Ecommerce = () => {
+    useEffect(() => {
+        const setFavicon = () => {
+        const link = document.querySelector("link[rel~='icon']");
+        if (link !== null) {
+            link.href = '../../Ecommerce.ico'
+            document.title ="Ecommerce"
+          }
+          
+        };
+        setFavicon();    
+      }, []);
+
+
   return (
-      <div className='h-100 w-100'>
+      <div className='h-100 w-100 ecommerce-all'>
 
           <div className='ecommerce-header'>
 
-              <div>
-                  <h5>mercado libre</h5>
-
-                  <div>
-                      <p>Enviar a
-                          <h6>Capital Federal</h6>
-                      </p>
+              <div className='ecommerce-title'>
+                  <h5>Ecommerce</h5>
+                  <div className='d-flex flex-column justify-content-start align-items-start '>
+                    <div className='ecommerce-title-div'>
+                    <p>Sent to</p>
+                    </div>
+                    <div className='ecommerce-title-div'>
+                    <b>Rosario</b>
+                    </div>
                   </div>
-
               </div>
 
-              <div className='d-flex flex-column align-items-center justify-content-evenly bg-primary h-100 w-40'>
+              <div className='d-flex flex-column align-items-center justify-content-evenly h-100 ecommerce-nav-search'>
                  
-                  <div className='w-100 d-flex flex-column align-items-center justify-content-center'>
-                      <input className='ecommerce-input-search'/>
+                  <div className='w-100 d-flex flex-row align-items-center justify-content-center'>
+                      <input className='ecommerce-input-search' placeholder="Buscar productos, marcas y más…"/>
+                      <button className='ecommerce-button-search'>
+                      <img src="https://cdn-icons-png.flaticon.com/512/2618/2618254.png " width="30" height="30" alt="" title="search" className="m-0 p-0 ecommerce-magnifying-glass"/>
+                      </button>
                   </div>
 
                   <div className='ecommerce-option-nav'>
                       <ul className='ecommerce-option-nav-ul'>
-                          <il>
+                          <li className='ecommerce-option-nav-li'>
                               Categorías
-                          </il>
-                          <il>
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
                               Ofertas
-                          </il>
-                          <il>
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
                               Historial
-                          </il>
-                          <il>
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
                               Supermercado
-                          </il>
-                          <il>
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
                               Mode
-                          </il>
-                          <il>
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
                               Mercado play
-                          </il>
-                          <il>
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
                               Vender
-                          </il>
-                          <il>
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
                               Ayuda
-                          </il>
+                          </li>
                       </ul>
                   </div>
               </div>
 
-              <div className='h-100 w-25 bg-primary d-flex flex-column align-items-center justify-content-end'>
+              <div className='h-100 d-flex flex-column align-items-center justify-content-end ecommerce-nav-profile'>
                 <div className='ecommerce-option-nav-profile'>
                   <ul className='ecommerce-option-nav-profile-ul'>
-                      <il>
+                      <li  className='ecommerce-option-nav-li'>
                           Creá tu cuenta
-                      </il>
-                      <il>
+                      </li>
+                      <li  className='ecommerce-option-nav-li'>
                           Ingresá
-                      </il>
-                      <il>
+                      </li>
+                      <li  className='ecommerce-option-nav-li'>
                           Mis compras
-                      </il>
+                      </li>
                   </ul>
                 </div>
 
@@ -73,34 +90,59 @@ const Ecommerce = () => {
 
 
           </div>
-          <div className='ecommerce-body'> </div>
+          <div className='ecommerce-body'> 
+          
+
+
+                    <div id="carouselExample" className="carousel slide">
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                <img src="..." className="d-block w-100" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                <img src="..." className="d-block w-100" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                <img src="..." className="d-block w-100" alt="..."/>
+                </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+            </button>
+            </div>          
+          </div>
           <div className='ecommerce-footer'>
 
             <ul className='ecommerce-option-footer'>
-              <il>
+              <li className='ecommerce-option-footer-li'>
                   Trabaja con nosotros
-              </il>
-              <il>
+              </li>
+              <li className='ecommerce-option-footer-li'>
                   Terminos y condiciones
-              </il>
-              <il>
+              </li>
+              <li className='ecommerce-option-footer-li'>
                   Como cuidamos tu privacidad
-              </il>
-              <il>
+              </li>
+              <li className='ecommerce-option-footer-li'>
                   Accesibilidad
-              </il>
-              <il>
+              </li>
+              <li className='ecommerce-option-footer-li'>
                   Informacion al usuario financiero
-              </il>
-              <il>
+              </li>
+              <li className='ecommerce-option-footer-li'>
                   Ayuda
-              </il>
-              <il>
+              </li>
+              <li className='ecommerce-option-footer-li'>
                   Defensa del Consumidor
-              </il>
-              <il>
+              </li>
+              <li className='ecommerce-option-footer-li'>
                   Información sobre seguros
-              </il>
+              </li>
             </ul>
            
           </div>

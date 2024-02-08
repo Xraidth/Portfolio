@@ -37,7 +37,7 @@ const CustomNav = ({handleInputChang, handlePortfolioBodyChang, portfolioBody}) 
     
       <nav className="navbar navbar-expand-lg bg-body-dark">
       <div className="container-fluid">
-        <a className="navbar-brand link-light" href="https://chat.openai.com/c/8bc467f7-0c11-4f04-b6d0-6d07113ddded">Portfolio</a>
+        <a className="navbar-brand link-light" href="/">Portfolio</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
