@@ -1,7 +1,40 @@
 export const my_email = "ignacio.rodriguez.sistemas@gmail.com";
 
 export const cardsData = [
+
+  {
+    title: "WebService",
+    body: "Management API Web server",
+    img: './nodejs.png',
+    tecnologies:[
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg'
+    ],
+    direction_card: 'https://github.com/Xraidth/WebServer.git'
+  },  
+  {
+    title: "MyBlog",
+    body: "This is my personal blog!",
+    img: './MyBlog.png',
+    tecnologies:[
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
+    ],
+    direction_card: '/MyBlog'
+  },
+  {
     
+    title: "Ecommerce",
+    body: "Brands and products at low prices",
+    img: './Ecommerce.png',
+    tecnologies:[
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
+    ],
+    direction_card: '/Ecommerce'
+  },
   {
     title: "TPI-Academia",
     body: "The Academic Management System",
@@ -13,28 +46,6 @@ export const cardsData = [
       'https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg'
     ],
     direction_card: 'https://github.com/fabriortenzi/TPI-Academia'
-  },
-  {
-    title: "MyBlog",
-    body: "This is my personal blog!",
-    img: './MyBlog.png',
-    tecnologies:[
-      'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
-      'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
-      'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
-    ],
-    direction_card: '/MyBlog'
-  }
-  ,
-  {
-    title: "WebService",
-    body: "Management API Web server",
-    img: './nodejs.png',
-    tecnologies:[
-      'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
-      'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg'
-    ],
-    direction_card: 'https://github.com/Xraidth/WebServer.git'
   },
   {
     title: "CurrenciesConverter",
