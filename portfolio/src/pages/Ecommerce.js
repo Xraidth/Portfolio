@@ -15,13 +15,14 @@ const Ecommerce = () => {
 
 
   return (
-      <div className='h-100 w-100 ecommerce-all'>
+      <div className='ecommerce-all'>
+        <div className='ecommerce-header'>
+        <div className='ecommerce-nav'>
+            
 
-          <div className='ecommerce-header'>
-
-              <div className='ecommerce-title'>
+        <div className='ecommerce-title'>
                   <h5>Ecommerce</h5>
-                  <div className='d-flex flex-column justify-content-start align-items-start '>
+                  <div className='d-flex flex-column justify-content-start align-items-start h-100 w-100 '>
                     <div className='ecommerce-title-div'>
                     <p>Sent to</p>
                     </div>
@@ -29,14 +30,12 @@ const Ecommerce = () => {
                     <b>Rosario</b>
                     </div>
                   </div>
-              </div>
-
-              <div className='d-flex flex-column align-items-center justify-content-evenly h-100 ecommerce-nav-search'>
-                 
+        </div>
+         <div className='ecommerce-nav-search'>
                   <div className='w-100 d-flex flex-row align-items-center justify-content-center'>
-                      <input className='ecommerce-input-search' placeholder="Buscar productos, marcas y más…"/>
+                      <input className='ecommerce-input-search' placeholder="Buscar productos, marcas y más…" />
                       <button className='ecommerce-button-search'>
-                      <img src="https://cdn-icons-png.flaticon.com/512/2618/2618254.png " width="30" height="30" alt="" title="search" className="m-0 p-0 ecommerce-magnifying-glass"/>
+                          <img src="https://cdn-icons-png.flaticon.com/512/2618/2618254.png " width="30" height="30" alt="" title="search" className="m-0 p-0 ecommerce-magnifying-glass" />
                       </button>
                   </div>
 
@@ -68,10 +67,10 @@ const Ecommerce = () => {
                           </li>
                       </ul>
                   </div>
-              </div>
-
-              <div className='h-100 d-flex flex-column align-items-center justify-content-end ecommerce-nav-profile'>
-                <div className='ecommerce-option-nav-profile'>
+              
+        </div>
+         <div className='ecommerce-nav-profile'>
+         <div className='ecommerce-option-nav-profile'>
                   <ul className='ecommerce-option-nav-profile-ul'>
                       <li  className='ecommerce-option-nav-li'>
                           Creá tu cuenta
@@ -84,16 +83,98 @@ const Ecommerce = () => {
                       </li>
                   </ul>
                 </div>
+         </div>
 
-              </div>
+        </div>
+
+
+        </div>
+
+      </div>
+  )
+}
+
+export default Ecommerce
+
+/*
+
+<div className='ecommerce-header'>
+        
+        <div className='ecommerce-nav'>
+        <div className='ecommerce-title'>
+                  <h5>Ecommerce</h5>
+                  <div className='d-flex flex-column justify-content-start align-items-start '>
+                    <div className='ecommerce-title-div'>
+                    <p>Sent to</p>
+                    </div>
+                    <div className='ecommerce-title-div'>
+                    <b>Rosario</b>
+                    </div>
+                  </div>
+        </div>
+         <div className='ecommerce-nav-search'>
+                  <div className='w-100 d-flex flex-row align-items-center justify-content-center'>
+                      <input className='ecommerce-input-search' placeholder="Buscar productos, marcas y más…" />
+                      <button className='ecommerce-button-search'>
+                          <img src="https://cdn-icons-png.flaticon.com/512/2618/2618254.png " width="30" height="30" alt="" title="search" className="m-0 p-0 ecommerce-magnifying-glass" />
+                      </button>
+                  </div>
+
+                  <div className='ecommerce-option-nav'>
+                      <ul className='ecommerce-option-nav-ul'>
+                          <li className='ecommerce-option-nav-li'>
+                              Categorías
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
+                              Ofertas
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
+                              Historial
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
+                              Supermercado
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
+                              Mode
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
+                              Mercado play
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
+                              Vender
+                          </li>
+                          <li className='ecommerce-option-nav-li'>
+                              Ayuda
+                          </li>
+                      </ul>
+                  </div>
+              
+        </div>
+         <div className='ecommerce-nav-profile'>
+         <div className='ecommerce-option-nav-profile'>
+                  <ul className='ecommerce-option-nav-profile-ul'>
+                      <li  className='ecommerce-option-nav-li'>
+                          Creá tu cuenta
+                      </li>
+                      <li  className='ecommerce-option-nav-li'>
+                          Ingresá
+                      </li>
+                      <li  className='ecommerce-option-nav-li'>
+                          Mis compras
+                      </li>
+                  </ul>
+                </div>
+         </div>
+        </div>
+
+
+        </div>
 
 
 
-          </div>
+
           <div className='ecommerce-body'> 
           
-
-
                     <div id="carouselExample" className="carousel slide">
             <div className="carousel-inner">
                 <div className="carousel-item active">
@@ -146,9 +227,4 @@ const Ecommerce = () => {
             </ul>
            
           </div>
-
-      </div>
-  )
-}
-
-export default Ecommerce
+*/

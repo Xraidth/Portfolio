@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Dancing+Script&family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
 
 html, body {
   height: 100%;
@@ -56,8 +60,7 @@ body {
 }
 
 .App-body-porfolio{
-  background: linear-gradient(to bottom right,  #000000, #1587EF); /* Gradient de azul a verde */
- 
+  
   width: 100%;
   height: 100%;
   
@@ -66,7 +69,7 @@ body {
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  z-index: 0;
+  
 }
 
 
@@ -355,7 +358,8 @@ background-color:rgb(3, 3,3);
 }
 
 .App-div-about-me{
-  background: linear-gradient(to bottom right,  #000000, #1587EF);
+ margin: 0;
+ padding: 0;
 }
 
 
@@ -370,22 +374,43 @@ background-color:rgb(3, 3,3);
 
 /*-------------------------------------*/
 .ecommerce-all{
+  background-color: #ededee;
+  height: 100%;
+  width: 100%;
+  
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .ecommerce-header{
   background-color:  #1a1731;
   color: rgb(190, 190, 190);
-  height: 100px;
-  width: 100%;
+  height: 110px;
+width: 100%;
+  /*padding: 5px 100px 5px 100px;*/
+ 
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  
+}
+
+.ecommerce-nav{
+  width: 85rem;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 100px 0 100px;
- 
+  border: solid 1px lightblue;
+  
 }
+
+
 .ecommerce-body{
   background-color:#EFBCD5;
   height: 100%;
@@ -395,9 +420,10 @@ background-color:rgb(3, 3,3);
   background-color:#8661C1;
   height: 60px;
   width: 100%;
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
+display: none;
 }
 .ecommerce-input-search{
   width: 600px;
@@ -426,6 +452,20 @@ background-color:rgb(3, 3,3);
   font-size: 15px;
   
 }
+
+.ecommerce-nav-profile{
+  
+  height: 100%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-end;
+  
+  border: solid 1px orange;
+  
+}
+
 .ecommerce-option-nav-profile{
   width: 100%;
   height: 42%;
@@ -437,8 +477,9 @@ justify-content: center;
 align-items: center;
   
 }
+
 .ecommerce-option-nav-profile-ul{
-width: 100%;
+width: 300px;
 height: 25px;
 margin: 0;
 padding: 0;
@@ -446,6 +487,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-evenly;
 list-style-type: none;
+background-color: red;
 }
 .ecommerce-option-footer-li{
   color: white;
@@ -465,8 +507,13 @@ flex-wrap: wrap;
 }
 
 .ecommerce-nav-search{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   width: 600px;
   height: 100%;
+  border: solid 1px yellow;
 }
 .ecommerce-magnifying-glass{
   opacity: 75%;
@@ -483,12 +530,11 @@ flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
   height: 100%;
-  width: 200px;
+  width: 110px;
+  border: solid 1px red ;
   
 }
-.ecommerce-nav-profile{
-  width: 23%;
-}
+
 .ecommerce-title-div{
   height: 30px;
   

@@ -51,7 +51,7 @@ function Webportfolio() {
       <header className='App-header'>
         <CustomNav handleInputChang={getStringFilter} handlePortfolioBodyChang={getPortfolioBody} portfolioBody={portfolioBody}  ></CustomNav>
       </header>
-      <div className='w-100 h-100'>
+      <div className='d-block'>
       {portfolioDirected()}
       </div>
 

@@ -7,7 +7,7 @@ const CustomGadgetSpotify = ({type, code}) => {
       src={`https://open.spotify.com/embed?uri=spotify:${type}:${code}`}
       width="400px"
       height="80px"
-      frameborder="0"
+      
       allowtransparency="true"
       allow="encrypted-media"
       title="Mi Increíble Lista de Reproducción de Spotify"

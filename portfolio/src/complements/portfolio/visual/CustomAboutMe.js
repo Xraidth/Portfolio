@@ -4,7 +4,7 @@ import CustomGadgetSpotify from './CustomGadgetSpotify.js'
 
 const CustomAboutMe = () => {
   return (
-<div className='d-flex justify-content-around align-items-start'>
+<div className='d-flex flex-lg-row flex-md-column flex-sm-column justify-content-around align-items-start'> 
   <div className='d-flex flex-column justify-content-center align-items-center'>
   <div className=' w-100 h-100 d-flex'>
    <span className='mt-4 ms-50'>
